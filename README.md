@@ -46,6 +46,6 @@ If you want to build production app run:
 ng build --prod
 
 
-If the setup was done correctly you should see your app running at [http://localhost:3000]
+If the setup was done correctly you should see your angular app running at [http://localhost:4200] and API's at [http://localhost:3000]
 ```
 
