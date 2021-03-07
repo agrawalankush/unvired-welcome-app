@@ -1,0 +1,6 @@
+.full-width-table {
+  width: 100vh;
+  height: 100%;
+  overflow: visible;
+  box-sizing: border-box;
+}

@@ -1,0 +1,17 @@
+<!-- <pre>{{ audits | json}}</pre> -->
+<div style="text-align: center;font-size: 20px;">All Audits</div>
+<div class="audit-cards-container">
+<mat-card color="primary" class="audit-card mat-elevation-z8"
+                *ngFor="let audit of audits">
+                <mat-card-content>
+                    <strong>User:</strong>&nbsp;&nbsp;{{audit.user}}<br />
+                    <strong>LoggedIn Time:</strong>&nbsp;&nbsp;{{ audit.loginTime   | date}}<br />
+                    <strong>LoggedOut Time:</strong>&nbsp;&nbsp;{{ audit.logoutTime | date}}<br />
+                    <strong>Accessed form IP:</strong>&nbsp;&nbsp;{{audit.ip}}<br />
+                </mat-card-content>
+                <mat-card-actions>
+                  <button mat-button color="primary">Details</button>
+                  <button mat-button color="warn" (click)="deleteaudit(audit._id)">Delete</button>
+                </mat-card-actions>
+</mat-card>
+</div>

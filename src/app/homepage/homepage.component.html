@@ -1,0 +1,23 @@
+
+<mat-toolbar color="basic" class="main-toolbar mat-elevation-z6">
+  <div class="company-title">
+      <button mat-button [routerLink]="['/home/users']">Home</button>
+  </div>
+  <div class="company-logo">
+      <img [routerLink]="['/home/users']" class="oly-logo-img" src="https://unvired.com/wp-content/uploads/2019/07/logo-2.png" />
+  </div>
+  <div class="logout">
+    <button mat-button [routerLink]="['/home/audits']" matTooltip="Audit">
+      <mat-icon>engineering</mat-icon>Audit
+    </button>
+      <button mat-button (click)="logout()"  matTooltip="Logout">
+        <mat-icon>exit_to_app</mat-icon>
+      </button>
+  </div>
+</mat-toolbar>
+<div class="main-content">
+  <router-outlet></router-outlet>
+</div>
+
+
+

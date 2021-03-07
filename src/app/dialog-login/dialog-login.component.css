@@ -1,0 +1,14 @@
+.login-container{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.mat-form-field {
+  width: 450px;
+}
+@media screen and (max-width: 600px) {
+   .mat-form-field {
+    width: 100%;
+   }
+}
