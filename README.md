@@ -30,8 +30,6 @@ Next, you will need to generate a public/private keypair.  The `.gitignore` auto
 node generateKeypair.js
 ```
 
-The Express application requires a .env file and a public/private keypair. In the root of the project, create a .env file and put the following into it:
-
 ## Starting the App
 
 Getting started with running and development:
