@@ -16,14 +16,14 @@ require('dotenv').config();
 var app = express();
 
 // Configures the database and opens a global connection that can be used in any module with `mongoose.connection`
-require('./server/config/database');
+require('./backend/config/database');
 
 // load the models
-require('./server/models/user');
-require('./server/models/audit');
+require('./backend/models/user');
+require('./backend/models/audit');
 
 // Pass the global passport object into the configuration function
- require('./server/config/passport')(passport);
+ require('./backend/config/passport')(passport);
 
 
 
@@ -50,7 +50,7 @@ app.use(express.static(path.join(__dirname, 'dist/unvired')));
  */
 
 // Imports all of the routes from ./routes/index.js
-app.use(require('./server/routes'));
+app.use(require('./backend/routes'));
 
 
 // Send all other requests to the Angular app

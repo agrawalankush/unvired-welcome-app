@@ -49,4 +49,4 @@ Thumbs.db
 .env
 
 #Private Key
-/server/id_rsa_priv.pem
+/backend/id_rsa_priv.pem
