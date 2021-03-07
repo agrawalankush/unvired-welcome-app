@@ -5,12 +5,12 @@
                 *ngFor="let audit of audits">
                 <mat-card-content>
                     <strong>User:</strong>&nbsp;&nbsp;{{audit.user}}<br />
-                    <strong>LoggedIn Time:</strong>&nbsp;&nbsp;{{ audit.loginTime   | date}}<br />
-                    <strong>LoggedOut Time:</strong>&nbsp;&nbsp;{{ audit.logoutTime | date}}<br />
+                    <strong>LoggedIn Time:</strong>&nbsp;&nbsp;{{ audit.loginTime   | date:'medium'}}<br />
+                    <strong>LoggedOut Time:</strong>&nbsp;&nbsp;{{ audit.logoutTime | date:'medium'}}<br />
                     <strong>Accessed form IP:</strong>&nbsp;&nbsp;{{audit.ip}}<br />
                 </mat-card-content>
                 <mat-card-actions>
-                  <button mat-button color="primary">Details</button>
+                  <!-- <button mat-button color="primary">Details</button> -->
                   <button mat-button color="warn" (click)="deleteaudit(audit._id)">Delete</button>
                 </mat-card-actions>
 </mat-card>
